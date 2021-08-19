@@ -31,9 +31,8 @@ namespace Question3
         {
             foreach (var item in arr)
             {
-                Console.Write(item + " ");
+                Console.WriteLine(item);
             }
-            Console.Write("\n");
         }
     }
 }
