@@ -7,6 +7,8 @@ namespace Question7
         static void Main(string[] args)
         {
             Console.WriteLine("Prime numbers[0 - 1000]\n");
+
+            PrimeNumbers.Find(1000);
         }
     }
 }
