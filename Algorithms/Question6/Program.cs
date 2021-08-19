@@ -6,7 +6,8 @@ namespace Question6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Check Anagrams\n");
+            // Call Initialize method from Anagram class
+            Anagrams.Initialize();
         }
     }
 }
