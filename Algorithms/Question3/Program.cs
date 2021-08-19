@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Question3
 {
@@ -6,7 +7,7 @@ namespace Question3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Insertion Sort");
+            Console.WriteLine("Insertion Sort\n");
         }
     }
 }
