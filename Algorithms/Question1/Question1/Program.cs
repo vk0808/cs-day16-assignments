@@ -9,8 +9,11 @@ namespace Question1
             // welcome message
             Console.WriteLine("Permutations of a String using Iterative method and Recursion method\n");
 
+
+            string str = "ABC";
+
             // object instansiation - recursive
-            string[] recursive = Permutations.Recursive.performRec("ABC");
+            string[] recursive = Permutations.Recursive.performRec(str);
 
             // display result
             Console.Write("Recursive: ");
@@ -18,13 +21,11 @@ namespace Question1
             {
                 Console.Write(item + " ");
             }
-
-
             Console.WriteLine("\n");
 
 
             // object instansiation - iterative
-            string[] iterative = Permutations.Iterative.performIter("ABC");
+            string[] iterative = Permutations.Iterative.performIter(str);
 
             // display result
             Console.Write("Iterative: ");
@@ -32,13 +33,13 @@ namespace Question1
             {
                 Console.Write(item + " ");
             }
+            Console.WriteLine("\n");
 
 
             // check if both arrays are equal
             int trueCount = 0;
             foreach (var item1 in recursive)
             {
-                int index = 0;
                 foreach (var item2 in iterative)
                 {
                     if (item1 == item2)
@@ -49,7 +50,7 @@ namespace Question1
                 }
             }
 
-
+            // check if the true count is equal to length
             if (trueCount == recursive.Length)
             {
                 Console.WriteLine("Both arrays are equal");
