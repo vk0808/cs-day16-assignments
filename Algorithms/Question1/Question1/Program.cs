@@ -32,6 +32,32 @@ namespace Question1
             {
                 Console.Write(item + " ");
             }
+
+
+            // check if both arrays are equal
+            int trueCount = 0;
+            foreach (var item1 in recursive)
+            {
+                int index = 0;
+                foreach (var item2 in iterative)
+                {
+                    if (item1 == item2)
+                    {
+                        trueCount++;
+                        break;
+                    }
+                }
+            }
+
+
+            if (trueCount == recursive.Length)
+            {
+                Console.WriteLine("Both arrays are equal");
+            }
+            else
+            {
+                Console.WriteLine("Both arrays are not equal");
+            }
         }
     }
 }
