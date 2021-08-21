@@ -13,8 +13,10 @@ namespace Question9
             // get array of words separated by ',' from the file
             string[] words = File.ReadAllText(PATH).Split(",");
 
-            // sort the array
-            Array.Sort(words, StringComparer.InvariantCulture);
+            // sort the array using BubbleSort
+            BubbleSort<string>.SortArray(words);
+            BubbleSort<string>.Print(words);
+            
 
             Console.WriteLine("\n");
             // get the word to search from the user
