@@ -45,7 +45,7 @@ namespace Question8
             Console.WriteLine("\n");
         }
         
-
+        // Function to check if a number is palindrome or not
         private static bool IsPalindrome(int number)
         {
             int length = number.ToString().Length;
@@ -58,7 +58,6 @@ namespace Question8
                     return false;
                 }
             }
-
             return true;
         }
     }
