@@ -6,7 +6,9 @@ namespace Question8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Prime numbers that are Palindrome and Anagram\n");
+            Console.WriteLine("Prime numbers that are Palindrome\n");
+
+            PrimeNumber.Find(1000);
         }
     }
 }
