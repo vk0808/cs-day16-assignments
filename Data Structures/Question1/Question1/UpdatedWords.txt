@@ -1,0 +1,17 @@
+apple
+bat
+banana
+orange
+grape
+watermelon
+school
+scooter
+radio
+smartphone
+computer
+laptop
+internet
+television
+movies
+articles
+car

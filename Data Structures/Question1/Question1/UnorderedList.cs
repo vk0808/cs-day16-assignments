@@ -103,6 +103,30 @@ namespace Question1
             return false;
         }
 
+
+        // Method to search if the value exits or not
+        internal void Remove(T value)
+        {
+            Node<T> prev = null;
+            Node<T> node = head;
+
+            if (node != null && node.data.Equals(value))
+            {
+                head = node.next;
+            }
+
+            while (node != null && node.data.Equals(value))
+            {
+                prev = node;
+                node = node.next;
+            }
+
+            if (node == null) { return; }
+
+            prev.next = node.next;
+        }
+
+
         // Method to display
         internal void Display()
         {
@@ -114,9 +138,44 @@ namespace Question1
             }
             while (temp != null)
             {
-                Console.Write(temp.data + " ");
+                Console.Write(temp.data + "\n");
                 temp = temp.next;
             }
+        }
+
+        // Method to get size
+        internal int Count()
+        {
+            int count = 0;
+            Node<T> node = this.head;
+            if (node == null)
+            {
+                return count;
+            }
+            while (node != null)
+            {
+                node = node.next;
+                count++;
+            }
+            return count;
+        }
+
+        // Method to get value for the index
+        internal T GetValue(int index)
+        {
+            Node<T> node = head;
+            int count = 0;
+
+            while (node != null)
+            {
+                if (count == index)
+                {
+                    return node.data;
+                }
+                count++;
+                node = node.next;
+            }
+            return default(T);
         }
     }
 }

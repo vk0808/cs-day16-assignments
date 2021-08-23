@@ -11,3 +11,5 @@ C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data S
 C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data Structures\Question1\Question1\obj\Debug\netcoreapp3.1\Question1.dll
 C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data Structures\Question1\Question1\obj\Debug\netcoreapp3.1\Question1.pdb
 C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data Structures\Question1\Question1\obj\Debug\netcoreapp3.1\Question1.genruntimeconfig.cache
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data Structures\Question1\Question1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day16Problems\Data Structures\Question1\Question1\obj\Debug\netcoreapp3.1\Question1.csproj.CopyComplete
