@@ -7,6 +7,8 @@ namespace Question4
         static void Main(string[] args)
         {
             Console.WriteLine("Simulate Banking Cash Counter\n");
+
+            Bank.CashCounter();
         }
     }
 }

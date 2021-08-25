@@ -49,12 +49,12 @@ namespace Question4
             Node<T> temp = this.head;
             if (temp == null)
             {
-                Console.WriteLine("Linkedlist is empty");
+                //Console.WriteLine("Linkedlist is empty");
                 return;
             }
             while (temp != null)
             {
-                Console.Write(temp.data + "\n");
+                Console.Write(temp.data + " ");
                 temp = temp.next;
             }
         }
