@@ -6,10 +6,12 @@ namespace Question3
 {
     public class Stack<T>
     {
+        // Instance variable
         private int top;
         private T[] stack;
         private int maxSize;
 
+        // Constructor
         public Stack(int size)
         {
             this.maxSize = size;
@@ -17,7 +19,8 @@ namespace Question3
             this.top = -1;
         }
 
-        internal void push(T data)
+        // Method to Push to stack
+        internal void Push(T data)
         {
             if (top == this.maxSize)
             {
@@ -29,7 +32,8 @@ namespace Question3
             }
         }
 
-        internal T pop()
+        // Method to Pop from stack
+        internal T Pop()
         {
             if (top == -1)
             {
@@ -44,7 +48,8 @@ namespace Question3
             }
         }
 
-        internal T peek()
+        // Method to Peek at stack
+        internal T Peek()
         {
             if (top == -1)
             {
@@ -57,13 +62,14 @@ namespace Question3
             }
         }
 
-
+        // Method to check is stack Empty
         internal bool isEmpty()
         {
             return (top == -1) ? true : false;
         }
 
-        internal int size()
+        // Method to find stack Size
+        internal int Size()
         {
             return top + 1;
         }
